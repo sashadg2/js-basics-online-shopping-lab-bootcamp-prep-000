@@ -13,6 +13,7 @@ function addToCart(item) {
  // write your code here
  var num = Math.random()
  var obj = new Object()
+ obj.item = num
 }
 
 function viewCart() {
