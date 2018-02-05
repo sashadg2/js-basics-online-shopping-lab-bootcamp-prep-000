@@ -31,7 +31,7 @@ function viewCart() {
      }
      console.log("In your cart, you have " + items.join(", ") + ".");
    }
-
+}
 
 function total() {
   // write your code here
