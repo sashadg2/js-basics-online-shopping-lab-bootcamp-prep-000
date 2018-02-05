@@ -20,18 +20,24 @@ function addToCart(item) {
 }
 
 function viewCart() {
-   if (cart.length === 0) {
-     console.log("Your shopping cart is empty.")
-   } else {
-     var items = [];
-     for (var i = 0; i < cart.length; i++) {
-       for (var item in cart[i]) {
-         items.push(item + " at $" + cart[i][item])
-       }
-     }
-     console.log("In your cart, you have " + items.join(" , ") + ".");
+   const l = cart.length
+
+   if (!l) {
+     return console.log("Your shopping cart is empty.")
    }
-}
+
+   const itemsAndPrices = []
+
+   for (let i = 0; i < l; i++) {
+     let itemAndPrice = cart[i]
+     let item = Object.keys(itemAndPrice)[0]
+     let price = itemAndPrice[item]
+
+     itemsAndPrices.push(`${item} at \$${price}`)
+   }
+
+   console.log(`In your cart, you have ${itemsAndPrices.join(', ')}.`)
+ }
 
 function total() {
   // write your code here
