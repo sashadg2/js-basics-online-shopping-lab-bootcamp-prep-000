@@ -29,7 +29,7 @@ function viewCart() {
          items.push(item + " at $" + cart[i][item])
        }
      }
-     console.log("In your cart, you have " + items.join(" and ") + ".");
+     console.log("In your cart, you have " + items.join(" , ") + ".");
    }
 }
 
