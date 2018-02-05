@@ -21,6 +21,10 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  content = []
+  for (let i = 0; i < cart.length; i++) {
+     line.push(` `+[i+1]+`. `  + katzDeli[i])
+  }
 }
 
 function total() {
