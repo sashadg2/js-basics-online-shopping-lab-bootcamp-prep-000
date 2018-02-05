@@ -15,6 +15,7 @@ function addToCart(item) {
  var obj = new Object()
  obj[item] = price
  cart.push(obj)
+ console.log(item + " has been added to your cart.")
 }
 
 function viewCart() {
